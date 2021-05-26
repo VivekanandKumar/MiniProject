@@ -1,13 +1,10 @@
-const burger = document.querySelector('.menu');
-let toogle = true;
-
-burger.addEventListener('click',() => {
-  if(toogle){
-    burger.classList.add('open');
-    toogle= false;
-  }
-  else{
-    burger.classList.remove('open');
-    toogle= true;
-  }
-});
+const navSlide = () =>{
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  
+  burger.addEventListener('click',()=>{
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+  });
+}
+navSlide();

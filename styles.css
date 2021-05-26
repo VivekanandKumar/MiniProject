@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'nunito-regular';
+  font-family: "nunito-regular";
   src: url(fonts/Nunito-Regular.ttf);
 }
 @font-face {
-  font-family: 'nunito-black';
+  font-family: "nunito-black";
   src: url(fonts/Nunito-Black.ttf);
 }
 * {
@@ -30,52 +30,93 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 20px 0 15px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 20px 0 15px 3px rgba(0, 0, 0, 0.3); */
 }
 .logo img {
   width: 200px;
   background-position: center;
   background-size: cover;
 }
-.navbar {
+.nav-links {
   display: flex;
 }
-.navbar li {
+.nav-links li {
   padding: 0 2.5em;
+  transition: all 0.5s ease;
 }
-.navbar li a {
+.nav-links li a {
   color: #fafafa;
   letter-spacing: 1.5px;
   font-size: 18px;
   transition: all 0.5s ease;
 }
-.navbar li a:hover {
+.nav-links li a:hover {
   color: #26b872;
 }
-.menu {
-  width: 45px;
-  height: 40px;
-  cursor: pointer;
+.burger {
+  width: 50px;
+  height: 50px;
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
-.line {
-  margin: 3px 0;
-  width: 35px;
-  height: 5px;
+.burger div {
+  width: 43px;
+  height: 6px;
   background-color: #26b872;
+  margin:2.5px 0;
   border-radius: 7px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
-.menu.open .line-1 {
-    transform: rotate(45deg) translate(9px,7px);
+@media screen and (max-width: 870px){
+  .nav-links li a{
+    font-size: 16px;
+  }
+  .nav-links li{
+    padding: 1.5em ;
+  }
 }
-.menu.open .line-2 {
-    transform: translateX(-40px);
-    opacity: 0;
+@media screen and (max-width: 768px) {
+  .header{
+    min-height: 4em;
+  }
+  .logo img{
+    width: 150px;
+  }
+  .nav-links {
+    position: absolute;
+    top: 4em;
+    background-color: #4a4c55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateY(-150%);
+    transition: all 0.5s ease;
+  }
+  .nav-links li {
+    margin: 1.5em 0;
+  }
+  .nav-links li a{
+    font-size: 16px;
+  }
+  .burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.menu.open .line-3 {
-    transform: rotate(-45deg) translate(9px,-7px);
+.nav-active {
+  transform: translateY(0%);
+}
+.toggle .line1 {
+  transform: rotate(45deg) translate(9px, 7px);
+}
+.toggle .line2 {
+  opacity: 0;
+  transform: translateX(-43px);
+}
+.toggle .line3 {
+  transform: rotate(-45deg) translate(9px, -7px);
 }
