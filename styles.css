@@ -16,7 +16,6 @@
 }
 *:focus{
   outline: 0;
-  background: none;
 }
 body {
   background-color: #fafafa;
