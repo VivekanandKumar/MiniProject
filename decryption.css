@@ -12,7 +12,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "nunito-regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 *:focus {
   outline: 0;
@@ -46,7 +46,6 @@ body {
   background: #26b872;
   padding: 1em;
   font-size: 25px;
-  font-family: 'nunito-black',sans-serif;
   color: #fafafa;
   letter-spacing: 1.5px;
   border-left: 1em solid #4a4c55;

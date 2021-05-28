@@ -95,7 +95,6 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.5em;
-  font-family: sans-serif;
 }
 .poster .info button {
   margin-top: 2em;
@@ -106,7 +105,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   border-radius: 50px;
-  font-family: "nunito-regular", sans-serif;
   cursor: pointer;
   color: #fff;
   transition: all 0.5s ease;
@@ -152,7 +150,6 @@ body {
   text-align: left;
   font-size: 22px;
   letter-spacing: 1.3px;
-  font-family: 'nunito-regular',sans-serif;
   font-weight: bolder;
 }
 .main p{
@@ -160,7 +157,6 @@ body {
   line-height: 1.5em;
   letter-spacing: 1px;
   padding: 1em 0;
-  font-family: 'nunito-regular',sans-serif;
 }
 .main .enc:hover,.main .dec:hover{
   transform: scale(1.05);
