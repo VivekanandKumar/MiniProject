@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Encryption | Ceaser Cipher Cryptography</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" href="encryption.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="Images/logo.png" alt="logo-image" />
+    </div>
+    <div class="title">
+      <h2>Encryption</h2>
+    </div>
+    <div class="main">
+      <div class="container-1 container">
+        <textarea
+          name=""
+          id="plain-text"
+          placeholder="Plain Text Here ...."
+        ></textarea>
+        <textarea name="" id="cipher-text" placeholder="Your Output Here" disabled></textarea>
+      </div>
+      <div class="container-2 container">
+        <input
+          type="text"
+          name=""
+          value="3"
+          id="shift"
+          placeholder="Enter Shift Value"
+        />
+        <button class="enc-btn">Encrypt</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy Copyright 2021.</p>
+    </div>
+    <script>
+      $(".enc-btn").click(function () {
+        var shift = Number($("#shift").val());
+        var cipher = $("#plain-text").val().toLowerCase();
+        var result = "";
+        var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+        if (shift == ""){
+          alert("Enter a shift value"); 
+          return; 
+        }
+        else if(cipher == ""){
+          alert("Enter plain text");
+        }
+        if (shift > 26) {
+          shift = shift % 26;
+        } else if (shift < 0) {
+          shift = (shift % 26) + 26;
+        }
+        for (var i = 0; i < cipher.length; i++) {
+          var ch = cipher.charAt(i);
+          if (/[a-zA-Z]/.test(ch)) {
+            var index = alphabet.indexOf(ch);
+            var x = index + shift;
+            if (x > 25) {
+              x = index - (26 - shift);
+              result = result + alphabet.charAt(x);
+            } else {
+              result = result + alphabet.charAt(x);
+            }
+          } else {
+            result = result + ch;
+          }
+        }
+        $("#cipher-text").val(result);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>About | Ceaser Cipher Cryptography</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="Images/logo.png" alt="logo-image" />
+    </div>
+    <div class="main">
+      <h1 class="o">Overview</h1>
+        <p>
+          The ceaser cipher is the simplest and oldest method of cryptography.
+          The Caesar cipher method is based on a mono-alphabetic cipher and is
+          also called a shift cipher or additive cipher. Julius Caesar used the
+          shift cipher (additive cipher) technique to communicate with his
+          officers. For this reason, the shift cipher technique is called the
+          Caesar cipher. The Caesar cipher is a kind of replacement
+          (substitution) cipher, where all letter of plain text is replaced by
+          another letter.
+        </p>
+        <p>
+          Let's take an example to understand the Caesar cipher, suppose we are
+          shifting with 1, then A will be replaced by B, B will be replaced by
+          C, C will be replaced by D, D will be replaced by C, and this process
+          continues until the entire plain text is finished.
+        </p>
+        <p>
+          Caesar ciphers is a weak method of cryptography. It can be easily
+          hacked. It means the message encrypted by this method can be easily
+          decrypted.
+        </p>
+        <p>
+          <strong>Plain Text:</strong>
+          It is a simple message written by the user.
+        </p>
+        <p>
+          <strong>Cipher Text:</strong>
+          It is an encrypted message after applying some technique.
+        </p>
+        <div class="formula">
+          <p><strong>The formula of encryption is:</strong></p>
+          <p>E<sub>n</sub> (x) = (x + n) mod 26</p>
+          <p><strong>The formula of decryption is:</strong></p>
+          <p>D<sub>n</sub> (x) = (xi - n) mod 26</p>
+          <p>
+            If any case (Dn) value becomes negative (-ve), in this case, we will
+            add 26 in the negative value.
+          </p>
+          <p><strong>Where,</strong></p>
+          <p>
+            E denotes the encryption<br/>
+            D denotes the decryption<br />
+            x denotes the letters value<br />
+            n denotes the key value (shift value)
+          </p>
+          <h4 class="n">
+            Note: "i" denotes the offset of the ith number of the letters, as
+            shown in the table below.
+          </h4>
+          <img
+            src="https://static.javatpoint.com/blog/images/caesar-cipher-technique.jpg"
+            alt="Caesar Cipher Technique"
+          />
+        </div>
+        <br />
+        <div class="formula">  
+          <p>
+            <strong>Example:</strong> Use the Caesar cipher to encrypt and
+            decrypt the message "HELLO," and the key (shift) value of this
+            message is 15.
+          </p>
+          <p><strong>Encryption</strong></p>
+          <p>
+            We apply encryption formulas by character, based on alphabetical
+            order.
+          </p>
+          <p>The formula of encryption is:</p>
+          <p>
+            <strong>E<sub>n</sub> (x) = (x + n) mod 26</strong>
+          </p>
+          <table class="alt">
+            <tr>
+              <td>Plaintext: H &rarr; 07</td>
+              <td>E<sub>n</sub>: (07 + 15) mod 26</td>
+              <td>Ciphertext: 22 &rarr; W</td>
+            </tr>
+            <tr>
+              <td>Plaintext: E &rarr; 04</td>
+              <td>E<sub>n</sub>: (04 + 15) mod 26</td>
+              <td>Ciphertext: 19 &rarr; T</td>
+            </tr>
+            <tr>
+              <td>Plaintext: L &rarr; 11</td>
+              <td>E<sub>n</sub>: (11 + 15) mod 26</td>
+              <td>Ciphertext: 00 &rarr; A</td>
+            </tr>
+            <tr>
+              <td>Plaintext: L &rarr; 11</td>
+              <td>E<sub>n</sub>: (11 + 15) mod 26</td>
+              <td>Ciphertext: 00 &rarr; A</td>
+            </tr>
+            <tr>
+              <td>Plaintext: O &rarr; 14</td>
+              <td>E<sub>n</sub>: (14 + 15) mod 26</td>
+              <td>Ciphertext: 03 &rarr; D</td>
+            </tr>
+          </table>
+          <h4 class="n">
+            Note that the Caesar cipher is monoalphabetic, so the same plaintext
+            letters are encrypted as the same letters. Like, "HELLO" has "L",
+            encrypted by "A".
+          </h4>
+          <p>The encrypted message of this plain text is "WTAAD".</p>
+          <p><strong>Decryption</strong></p>
+          <p>
+            We apply decryption formulas by character, based on alphabetical
+            order.
+          </p>
+          <p>The formula of decryption is:</p>
+          <p>
+            <strong>D<sub>n</sub> (x) = (xi - n) mod 26</strong>
+          </p>
+          <table class="alt">
+            <tr>
+              <td>Ciphertext: W &rarr; 22</td>
+              <td>D<sub>n</sub>: (22 - 15) mod 26</td>
+              <td>Plaintext: 07 &rarr; H</td>
+            </tr>
+            <tr>
+              <td>Ciphertext: T &rarr; 19</td>
+              <td>D<sub>n</sub>: (19 - 15) mod 26</td>
+              <td>Plaintext: 04 &rarr; E</td>
+            </tr>
+            <tr>
+              <td>Ciphertext: A &rarr; 00</td>
+              <td>D<sub>n</sub>: (00 - 15) mod 26</td>
+              <td>Plaintext: 11 &rarr; L</td>
+            </tr>
+            <tr>
+              <td>Ciphertext: A &rarr; 00</td>
+              <td>D<sub>n</sub>: (00 - 15) mod 26</td>
+              <td>Plaintext: 11 &rarr; L</td>
+            </tr>
+            <tr>
+              <td>Ciphertext: D &rarr; 03</td>
+              <td>D<sub>n</sub>: (03 - 15) mod 26</td>
+              <td>Plaintext: 14 &rarr; O</td>
+            </tr>
+          </table>
+          <p>The decrypted message is "HELLO".</p>
+          <h4 class="n">
+            Note: If any case (D<sub>n</sub>) value becomes negative (-ve), in
+            this case, we will add 26 in the negative value. Like, the third
+            letter of the ciphertext.
+          </h4>
+          <p>
+            D<sub>n</sub> = (00 - 15) mod 26<br />
+            = -15
+          </p>
+          <p>The value of dn is negative, so 26 will be added to it.</p>
+          <p>
+            = -15 + 26<br />
+            = 11
+          </p>
+        </div>
+        <h2 class="h2">Advantages of Caesar cipher</h2>
+        <p>Its benefits are as follows: -</p>
+        <ol class="points">
+          <li>It is very easy to implement.</li>
+          <li>This method is the simplest method of cryptography.</li>
+          <li>Only one short key is used in its entire process.</li>
+          <li>
+            If a system does not use complex coding techniques, it is the best
+            method for it.
+          </li>
+          <li>It requires only a few computing resources.</li>
+        </ol>
+        <h2 class="h2">Disadvantages of Caesar cipher</h2>
+        <p>Its disadvantages are as follows: -</p>
+        <ol class="points">
+          <li>
+            It can be easily hacked. It means the message encrypted by this
+            method can be easily decrypted.
+          </li>
+          <li>It provides very little security.</li>
+          <li>
+            By looking at the pattern of letters in it, the entire message can
+            be decrypted.
+          </li>
+        </ol>
+    </div>
+    <div class="footer">
+      <p>&copy Copyright 2021.</p>
+    </div>
+    <script></script>
+  </body>
+</html>

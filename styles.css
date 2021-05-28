@@ -158,7 +158,7 @@ body {
 .main p{
   width: 100%;
   line-height: 1.5em;
-  letter-spacing: 1.08px;
+  letter-spacing: 1px;
   padding: 1em 0;
   font-family: 'nunito-regular',sans-serif;
 }

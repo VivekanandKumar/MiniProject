@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <title>Home</title>
+    <title>Home | Ceaser Cipher Cryptography</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,16 +19,13 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="#">How its works</a>
+          <a href="about.html" target="_blank">About</a>
         </li>
         <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Credits</a>
+          <a href="credits.html" target="_blank">Credits</a>
         </li>
       </ul>
       <div class="burger">
@@ -46,12 +43,12 @@
           else can decipher. I have also observed that the cleverer the person,
           the more intimate is his conviction."
         </p>
-        <button>Learn more</button>
+        <button onclick="window.open('about.html','_blank')">Learn more</button>
       </div>
     </div>
 
     <div class="main">
-      <div class="enc">
+      <div class="enc" onclick="window.open('encryption.html','_blank')">
         <img class="image" src="Images/enc-image.png" alt="encryption-image" />
 
         <div class="enc-info">
@@ -65,7 +62,7 @@
         </div>
       </div>
 
-      <div class="dec">
+      <div class="dec" onclick="window.open('decryption.html','_blank')">
         <img class="image" src="Images/dec-image.png" alt="decryption-image" />
         <div class="dec-info">
           <h3 class="title">Decryption</h3>
@@ -82,6 +79,17 @@
     <div class="footer">
       <p>&copy Copyright 2021.</p>
     </div>
-    <script src="main.js"></script>
+    <script>
+            const navSlide = () =>{
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click',()=>{
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+      }
+      navSlide();
+    </script>
   </body>
 </html>
