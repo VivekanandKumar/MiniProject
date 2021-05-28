@@ -75,7 +75,7 @@ body {
   min-height: 30em;
   display: flex;
   align-items: center;
-  background: url('Images/poster.svg');
+  background: url("Images/poster.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -99,63 +99,70 @@ body {
   width: 10em;
   height: 3em;
   letter-spacing: 0.8px;
-  background-color: transparent;
-  border: 1px solid #26b872;
+  background: #26b872;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
   border-radius: 50px;
   font-family: "nunito-regular", sans-serif;
   cursor: pointer;
   color: #fff;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .poster .info button:hover{
-  background: #26b872;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.05);
 }
-
 .main{
   width: 100%;
-  min-height: 20em;
+  min-height: 25em;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 0 2em;
 }
-.enc,.dec{
+.main .enc,.main .dec{
   width: 50%;
-  min-height: 22em;
-  margin: 0 5em;
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  cursor: pointer;
-  transition: all .5s ease;
-  background: #f9fafa;
   display: flex;
   flex-direction: column;
-  padding: 1em;
-  
+  min-height: 20em;
+  background: #fafafa;
+  border-radius: 20px;
+  border: none;
+  margin: 2em;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  transition: all .5s ease;
+  padding: 0 1em;
+  cursor: pointer;
 }
-.enc img,.dec img{
+.main .image{
   width: 200px;
-  background-size: contain;
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   align-self: center;
-}
-.enc h3,.dec h3{
-  color: #000;
   margin-bottom: 1em;
+  margin-top: 1em;
+}
+.main .title{
+  width: 100%;
+  line-height: 2em;
+  text-align: left;
   font-size: 22px;
+  letter-spacing: 1.3px;
+  font-family: 'nunito-regular',sans-serif;
+  font-weight: bolder;
 }
-.enc p,.dec p{
-  font-size: 14px;
-  color: #000;
-  letter-spacing: .8px;
+.main p{
+  width: 100%;
+  line-height: 1.5em;
+  letter-spacing: 1.08px;
+  padding: 1em 0;
+  font-family: 'nunito-regular',sans-serif;
 }
-.enc:hover,
-.dec:hover{
-  transform: scale(1.08);
+.main .enc:hover,.main .dec:hover{
+  transform: scale(1.05);
 }
-.footer{
+.footer {
   width: 100%;
   min-height: 4em;
   display: flex;
@@ -163,7 +170,7 @@ body {
   align-items: center;
   background-color: #4a4c55;
 }
-.footer p{
+.footer p {
   color: #fafafa;
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -188,30 +195,20 @@ body {
     justify-content: center;
     align-items: center;
     background: none;
-    background-color: #4a4c55
+    background-color: #4a4c55;
   }
-  .poster .info{
+  .poster .info {
     width: 100%;
     margin: 0;
     padding: 0 1.5em;
   }
-  .poster .info p{
+  .poster .info p {
     font-size: 14px;
   }
-  .poster .info button{
+  .poster .info button {
     margin-top: 1em;
     width: 9em;
     height: 2.5em;
-  }
-  .main{
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em;
-  }
-  .main div{
-    min-height: 20em;
-    margin: 0 1em;
-    background: transparent;
   }
 }
 @media screen and (max-width: 768px) {
@@ -258,35 +255,37 @@ body {
     align-items: center;
     background-color: #4a4c55;
   }
-  .poster .info{
+  .poster .info {
     width: 100%;
     margin: 0;
     padding: 0 1.5em;
   }
-  .poster .info p{
+  .poster .info p {
     font-size: 14px;
   }
-  .poster .info button{
+  .poster .info button {
     margin-top: 1em;
     width: 9em;
     height: 2.5em;
   }
   .main{
-    width: 100%;
-    min-height: 50em;
-    display: flex;
+    min-height: 40em;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    padding: 2em;
   }
-  .main div{
+  .main .enc,.main .dec{
     width: 100%;
-    min-height: 20em;
-    background-color: transparent;
-    border: 1px solid #ddd;
-    border-radius: 13px;
+    min-height: 15em;
   }
-  
+  .main .image{
+    width: 180px;
+    height: 180px;
+  }
+  .main .title{
+    line-height: 1.5em;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }
 .nav-active {
   transform: translateY(0%);
