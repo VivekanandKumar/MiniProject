@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "nunito-regular";
-  src: url(fonts/Nunito-Regular.ttf);
-}
-@font-face {
-  font-family: "nunito-black";
-  src: url(fonts/Nunito-Black.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -40,40 +32,41 @@ body {
   background-position: center;
   background-size: cover;
 }
-.main{
+.main {
   padding: 0 1em;
   margin: 1em 0;
 }
-.main .o{
+.main .o {
   width: 100%;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background: #696be4;
   color: #fafafa;
   letter-spacing: 1.5px;
   font-size: 25px;
 }
-.main p{
+.main p {
   width: 80%;
   line-height: 1.7em;
   letter-spacing: 1.08px;
   margin: 2em 0;
 }
-.main .formula{
+.main .formula {
   padding: 2em;
-  background-color: #F9F9F9;
-  border: .5px solid #4a4c55;
+  background-color: #f9f9f9;
+  border: 0.5px solid #4a4c55;
 }
-.main .n{
+.main .n {
   background-color: #d5cafc;
   padding: 1em;
   margin: 1em 0;
   border-left: 5px solid #2600ff;
 }
-.main .alt{
+.main .alt {
   border-collapse: collapse;
   width: 100%;
 }
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -82,15 +75,15 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-.main .h2{
+.main .h2 {
   width: 100%;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background: #696be4;
   color: #fafafa;
   letter-spacing: 1.5px;
   margin: 1em 0;
 }
-.main .points li{
+.main .points li {
   list-style: decimal;
   line-height: 3em;
   margin-left: 3em;
@@ -114,57 +107,55 @@ tr:nth-child(even) {
   }
 }
 @media screen and (max-width: 870px) {
-  .main p{
+  .main p {
     width: 100%;
   }
-
 }
 @media screen and (max-width: 768px) {
-  .header{
+  .header {
     min-height: 4em;
   }
-  .header img{
+  .header img {
     width: 150px;
   }
-  .main{
-    margin: .5em 0;
+  .main {
+    margin: 0.5em 0;
   }
-  .main .o{
-    padding: .5em .5em;
+  .main .o {
+    padding: 0.5em 0.5em;
     letter-spacing: 1.08px;
     font-size: 20px;
   }
-  .main p{
+  .main p {
     width: 100%;
     line-height: 1.5;
     letter-spacing: 1.05px;
     margin: 1em 0;
   }
-  .main .formula{
+  .main .formula {
     padding: 1em;
   }
-  .main img{
+  .main img {
     width: 100%;
   }
-  .main .n{
-    padding: .5em;
+  .main .n {
+    padding: 0.5em;
     font-size: 14px;
   }
-  td, th {
+  td,
+  th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 5px;
     font-size: 8px;
   }
-  .main .h2{
-    padding: .5em .5em;
+  .main .h2 {
+    padding: 0.5em 0.5em;
     letter-spacing: 1.1px;
-    margin: .5em 0;
+    margin: 0.5em 0;
     font-size: 18px;
   }
-  .main .points li{
+  .main .points li {
     line-height: 2em;
   }
-
 }
-

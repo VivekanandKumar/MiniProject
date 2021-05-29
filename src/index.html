@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <title>Home | Ceaser Cipher Cryptography</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap"
@@ -15,17 +15,17 @@
   <body>
     <div class="header">
       <div class="logo">
-        <img src="Images/logo.png" alt="logo-images" />
+        <img src="/Images/logo.png" alt="logo-images" />
       </div>
       <ul class="nav-links">
         <li>
-          <a href="index.html">Home</a>
+          <a href="/src/index.html">Home</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="/src/about.html">About</a>
         </li>
         <li>
-          <a href="credits.html">Credits</a>
+          <a href="/src/credits.html">Credits</a>
         </li>
       </ul>
       <div class="burger">
@@ -43,13 +43,15 @@
           else can decipher. I have also observed that the cleverer the person,
           the more intimate is his conviction."
         </p>
-        <button onclick="window.open('about.html','_self')">Learn more</button>
+        <button onclick="window.open('/src/about.html','_self')">
+          Learn more
+        </button>
       </div>
     </div>
 
     <div class="main">
-      <div class="enc" onclick="window.open('encryption.html','_self')">
-        <img class="image" src="Images/enc-image.png" alt="encryption-image" />
+      <div class="enc" onclick="window.open('/src/encryption.html','_self')">
+        <img class="image" src="/Images/enc-image.png" alt="encryption-image" />
 
         <div class="enc-info">
           <h3 class="title">Encryption</h3>
@@ -62,8 +64,8 @@
         </div>
       </div>
 
-      <div class="dec" onclick="window.open('decryption.html','_self')">
-        <img class="image" src="Images/dec-image.png" alt="decryption-image" />
+      <div class="dec" onclick="window.open('/src/decryption.html','_self')">
+        <img class="image" src="/Images/dec-image.png" alt="decryption-image" />
         <div class="dec-info">
           <h3 class="title">Decryption</h3>
           <p>
@@ -79,17 +81,6 @@
     <div class="footer">
       <p>&copy Copyright 2021.</p>
     </div>
-    <script>
-            const navSlide = () =>{
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-
-        burger.addEventListener('click',()=>{
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('toggle');
-        });
-      }
-      navSlide();
-    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

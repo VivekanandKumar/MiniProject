@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "nunito-regular";
-  src: url(fonts/Nunito-Regular.ttf);
-}
-@font-face {
-  font-family: "nunito-black";
-  src: url(fonts/Nunito-Black.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +6,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
-*:focus{
+*:focus {
   outline: 0;
 }
 body {
@@ -78,7 +70,7 @@ body {
   min-height: 30em;
   display: flex;
   align-items: center;
-  background: url("Images/poster.svg");
+  background: url("/Images/poster.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -109,10 +101,10 @@ body {
   color: #fff;
   transition: all 0.5s ease;
 }
-.poster .info button:hover{
+.poster .info button:hover {
   transform: scale(1.05);
 }
-.main{
+.main {
   width: 100%;
   min-height: 25em;
   display: flex;
@@ -120,7 +112,8 @@ body {
   align-items: center;
   padding: 0 2em;
 }
-.main .enc,.main .dec{
+.main .enc,
+.main .dec {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -130,11 +123,11 @@ body {
   border: none;
   margin: 2em;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   padding: 0 1em;
   cursor: pointer;
 }
-.main .image{
+.main .image {
   width: 200px;
   height: 200px;
   background-position: center;
@@ -144,7 +137,7 @@ body {
   margin-bottom: 1em;
   margin-top: 1em;
 }
-.main .title{
+.main .title {
   width: 100%;
   line-height: 2em;
   text-align: left;
@@ -152,13 +145,14 @@ body {
   letter-spacing: 1.3px;
   font-weight: bolder;
 }
-.main p{
+.main p {
   width: 100%;
   line-height: 1.5em;
   letter-spacing: 1px;
   padding: 1em 0;
 }
-.main .enc:hover,.main .dec:hover{
+.main .enc:hover,
+.main .dec:hover {
   transform: scale(1.05);
 }
 .footer {
@@ -267,25 +261,26 @@ body {
     width: 9em;
     height: 2.5em;
   }
-  .main{
+  .main {
     min-height: 40em;
     flex-direction: column;
     padding: 2em;
   }
-  .main .enc,.main .dec{
+  .main .enc,
+  .main .dec {
     width: 100%;
     min-height: 15em;
   }
-  .main .image{
+  .main .image {
     width: 150px;
     height: 150px;
   }
-  .main .title{
+  .main .title {
     line-height: 1.5em;
     font-size: 20px;
     letter-spacing: 1px;
   }
-  .main p{
+  .main p {
     letter-spacing: 0;
   }
 }

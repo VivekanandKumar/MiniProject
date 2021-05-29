@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <title>Encryption | Ceaser Cipher Cryptography</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" href="/styles/encryption.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="/Images/logo.png" alt="logo-image" />
+    </div>
+    <div class="title">
+      <h2>Encryption</h2>
+    </div>
+    <div class="main">
+      <div class="container-1 container">
+        <textarea
+          name=""
+          id="plain-text"
+          placeholder="Plain Text Here ...."
+        ></textarea>
+        <textarea
+          name=""
+          id="cipher-text"
+          placeholder="Your Output Here"
+          disabled
+        ></textarea>
+      </div>
+      <div class="container-2 container">
+        <input
+          type="text"
+          name=""
+          value="3"
+          id="shift"
+          placeholder="Enter Shift Value"
+        />
+        <button class="enc-btn">Encrypt</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy Copyright 2021.</p>
+    </div>
+    <script src="/js/enc.js"></script>
+  </body>
+</html>
