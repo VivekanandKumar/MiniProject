@@ -72,12 +72,17 @@ body {
   width: 100%;
   border-top: 3px solid #4a4c55;
 }
-.main .info h3 {
+.main .info h3,
+.main .info p {
   font-size: 25px;
   color: #4a4c55;
   letter-spacing: 1.5px;
-  text-align: center;
-  margin: 1em 0;
+  text-align: left;
+  margin: 1em 2em;
+}
+.main .info p{
+  font-size: 16px;
+  padding: 0 1em;
 }
 .main .info .links {
   width: 100%;
