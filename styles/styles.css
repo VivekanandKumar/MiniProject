@@ -70,7 +70,7 @@ body {
   min-height: 30em;
   display: flex;
   align-items: center;
-  background: url("Images/poster.svg");
+  background: url("../Images/poster.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
