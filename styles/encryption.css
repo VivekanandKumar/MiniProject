@@ -86,7 +86,7 @@ body {
   width: 50%;
   padding: 1em;
   height: 4em;
-  border-radius: 8px;
+  border-radius: 3px;
   border: none;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   font-size: 18px;
@@ -97,7 +97,7 @@ body {
   width: 50%;
   padding: 1em;
   height: 4em;
-  border-radius: 8px;
+  border-radius: 3px;
   border: none;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   font-size: 18px;
